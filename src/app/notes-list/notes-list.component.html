@@ -1,0 +1,25 @@
+<div class="search-bar-container">
+    <input type="text" placeholder="search">
+</div>
+
+    <div class="notes-list"> 
+       <!-- <div *ngFor="let note of realNote"  -->
+             
+        <div *ngFor="let note of realNote" id="list">
+            <h3 class="title">{{note.title}}</h3><hr style="width: 50%;">
+            <p class="body">{{note.body}}</p>
+        </div>
+     </div>
+
+   
+
+
+ <!-- has position fixed to bottom center -->
+ <button class="btn"  (click)= "redirect()">+ Add</button>  
+
+
+
+
+
+
+

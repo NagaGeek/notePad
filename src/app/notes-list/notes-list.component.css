@@ -1,0 +1,63 @@
+.search-bar-container{
+   max-width: 300px;
+   position: relative;
+   float:right;
+    padding-top:3em;
+    padding-right:40px ;
+   
+}
+
+.notes-list{
+ display: flex;
+ flex-wrap: wrap;
+ position: absolute;
+ top: 20%;
+ width: 100%;
+ max-height: auto;
+ overflow: hidden;
+
+}
+
+#list{
+    height: 150px;
+    width: 300px;
+    border: 1px solid black;
+    margin:20px ;
+    border-radius: 14px;
+    white-space:normal;
+    overflow: hidden;
+    transition: 100ms all;
+   
+}
+
+
+#list:hover{
+ cursor: pointer;
+ transform: scale(1.05);
+ height: auto;
+ padding: 16px;
+/* add box shadow here  */
+}
+
+#list, title, body{
+    text-align: center;  
+    text-align-last: center;
+}
+
+
+
+#notes-content{
+    max-width: 350px;
+    max-height: 100px;
+    border: 1px solid red;
+    padding: 40px;
+}
+.btn{
+    position: fixed;
+    top: 14%;
+    left: 47%;
+}
+.show{
+    display: flex;
+    padding-right:20px ;
+}
