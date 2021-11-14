@@ -1,5 +1,4 @@
 export class Note {
     public body!: string;
-    public title!:string;
-    
+    public title!:string; 
 }

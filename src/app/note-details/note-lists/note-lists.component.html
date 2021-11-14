@@ -1,0 +1,19 @@
+
+<!-- {{myNote.body}} -->
+
+<div data-aos="zoom-in-down" id="main-container">
+  <div id="header">
+    <h4> Your Notes</h4>
+    <input type="text" id="search" [(ngModel)]="searchTitle" placeholder="Search by Title..." >
+    <button type="button" class="btn btn-dark">Search</button>
+  </div>
+
+  <div  id="card-body">
+    <div *ngFor="let x of subNote" id="cardList-container">
+        <h3>{{x.title}}</h3>
+        <hr>
+       <pre class="note-body">{{x.body}}></pre> 
+
+       <button class="btn-dark button" [routerLink]="['/edit']" routerLinkActive="router-link-active" >edit</button>
+  </div>
+</div>

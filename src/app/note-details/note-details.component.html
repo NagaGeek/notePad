@@ -1,0 +1,31 @@
+
+<div class="form-container" data-aos="flip-left">
+    <form #noteForm = "ngForm">
+
+      <!-- input {text} area for title -->
+        <div class="form-group">
+          <label for="exampleFormControlInput1"><b><em>Title</em></b></label>
+              <input  required type="text" class="form-control" id="exampleFormControlInput1" 
+                placeholder="Title goes here" [(ngModel)]="note.title" name="title" >
+        </div>
+
+        <div class="form-group">
+
+        <!-- text area for body -->
+          <label for="exampleFormControlTextarea1"><b><em>Body</em></b></label>
+              <textarea required class="form-control" id="exampleFormControlTextarea1"
+                placeholder="Enter your note..." rows="7" [(ngModel)]="note.body" name="body" ></textarea>
+        </div>
+    
+        <button [disabled]="!noteForm.valid" type="button" class="btn btn-dark" 
+        (click) = "log1(noteForm.value)"
+        >Add</button> 
+
+        <button type="button" class="btn btn-dark" 
+        (click) = "del()"
+        [disabled]= "delete"
+        >Delete all</button> 
+      </form>
+
+</div>
+

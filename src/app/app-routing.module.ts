@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MainLayoutComponent } from './main-layout/main-layout.component';
-import { NotedetailsComponent } from './notedetails/notedetails.component';
-import { NotesListComponent } from './notes-list/notes-list.component';
+import { AppComponent } from './app.component';
+import { EditComponent } from './edit/edit.component';
+import { NoteDetailsComponent } from './note-details/note-details.component';
+import { NoteListsComponent } from './note-details/note-lists/note-lists.component';
 
-const routes: Routes = [
-  {path:'', component:MainLayoutComponent, 
-    children:[{path:'', component:NotesListComponent},
-    {path: ':id', component: NotedetailsComponent}
-  ]
-} 
+
+const routes: Routes = [ 
+  {path: "id", component: NoteListsComponent},
+  {path:"note-edit", component:EditComponent}
   
 ];
 

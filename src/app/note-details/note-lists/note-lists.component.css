@@ -1,0 +1,111 @@
+/* styling the main container */
+#main-container{
+  position: absolute;
+  right: 5%;
+  border: 1px solid black;
+  height: 75%;
+  top: 15%;
+  width: 1100px;
+  border-radius: 16px;
+  box-shadow: 3px 3px 5px 0;
+  word-wrap: break-word;
+  overflow-y: scroll;
+
+}
+
+#search{
+    position: absolute;
+    right: 10%;
+    top: 6.8%;
+    width: 300px;
+    border-radius: 7px;
+}
+.btn{
+    position: absolute;
+    right: 2%;
+    top: 6%;
+    width: 80px;
+}
+
+::placeholder{
+    font-family: 'Fugaz One', serif;    
+}
+
+#header h4{
+    padding-left: 20px;
+    padding-block: 24px;
+ font-family: 'Roboto Slab', serif;   
+}
+
+/* styling the body of the cardlist container */
+#card-body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: flex-start;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+#cardList-container{
+    height: auto;
+    max-width: 400px;
+    border: 1px solid black;
+    padding:10px 20px;
+    margin: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px;
+    background-color: rgb(255, 238, 0);
+    font-family: 'Fugaz One', cursive;
+    margin-block: 50px;
+    transition: all 100ms ease-in-out;
+    animation: fade 700ms ease-in-out;
+
+}
+
+@keyframes fade {
+    0%{opacity: 0;}  10%{opacity: 0.1;}  20%{opacity: 0.2;}  30%{opacity: 0.3;}
+
+    40%{ opacity: 0.4;}  50%{opacity: 0.5;}  60%{opacity: 0.6;}  70%{opacity: 0.7;}
+
+    80%{opacity: 0.8;}  90%{opacity: 0.9;}  100%{opacity:1}
+   
+}
+
+#cardList-container:hover{
+    transform: scale(1.07);
+    cursor: pointer;
+
+}
+.btn{
+    border-radius:14px;
+}
+.button{
+    visibility: hidden;
+    border-radius: 10px;
+    float: right;
+}
+#cardList-container:hover .button{
+    visibility: visible;
+    cursor: pointer;
+}
+#cardList-container p{
+    text-align: center;
+    text-align-last: center;
+}
+#cardList-container h4{
+    text-align: center;
+    text-align-last: center;
+    text-transform: uppercase; 
+}
+.note-body{
+    font-family: 'Roboto Slab', serif; 
+    overflow: hidden;
+    /* word-wrap: break-word; */
+    /* white space:pre wrap --- works with pre tag*/
+    white-space: pre-wrap; 
+    font-weight: 700;
+}
+
+
+

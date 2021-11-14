@@ -1,0 +1,14 @@
+#header{
+    height: 70px;
+    width: auto;
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-top: 13px;
+    font-style: italic;
+    background-image: linear-gradient(to left, #e98323, #ffcd9a, #000000, #f0aa3b, #ffffff);
+}
+*{
+    display: flex;
+    justify-content:flex-start;
+}
+
